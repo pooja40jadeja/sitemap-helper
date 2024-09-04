@@ -1,0 +1,52 @@
+{
+    "rules": {
+        "no-await-in-loop": 0,
+        "import/prefer-default-export": 0,
+        "no-return-await": 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "@typescript-eslint/ban-ts-comment": 0,
+        "max-classes-per-file": [
+            "error",
+            2
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "**/*.test.js",
+                    "**/*.spec.js",
+                    "./*.js"
+                ]
+            }
+        ],
+        "max-lines": "off",
+        "max-params": "off",
+        "import/order": [
+            "error",
+            {
+                "newlines-between": "ignore"
+            }
+        ],
+        "@typescript-eslint/no-namespace": 0
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.json"
+            ],
+            "rules": {
+                "no-unused-expressions": "off"
+            }
+        }
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+}
